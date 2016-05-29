@@ -286,6 +286,7 @@
 				F8CD5B0E1CFA8816003D2F13 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
