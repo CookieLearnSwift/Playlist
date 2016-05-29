@@ -7,17 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F8C4F5021CFB0FE100FEB87D /* PlaylistDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C4F5011CFB0FE100FEB87D /* PlaylistDetailViewController.swift */; };
 		F8CD5AFE1CFA8816003D2F13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CD5AFD1CFA8816003D2F13 /* AppDelegate.swift */; };
-		F8CD5B001CFA8816003D2F13 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CD5AFF1CFA8816003D2F13 /* ViewController.swift */; };
+		F8CD5B001CFA8816003D2F13 /* PlaylistMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CD5AFF1CFA8816003D2F13 /* PlaylistMasterViewController.swift */; };
 		F8CD5B031CFA8816003D2F13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8CD5B011CFA8816003D2F13 /* Main.storyboard */; };
 		F8CD5B051CFA8816003D2F13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8CD5B041CFA8816003D2F13 /* Assets.xcassets */; };
 		F8CD5B081CFA8816003D2F13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8CD5B061CFA8816003D2F13 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F8C4F5011CFB0FE100FEB87D /* PlaylistDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistDetailViewController.swift; sourceTree = "<group>"; };
 		F8CD5AFA1CFA8816003D2F13 /* Playlist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Playlist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8CD5AFD1CFA8816003D2F13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F8CD5AFF1CFA8816003D2F13 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F8CD5AFF1CFA8816003D2F13 /* PlaylistMasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistMasterViewController.swift; sourceTree = "<group>"; };
 		F8CD5B021CFA8816003D2F13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F8CD5B041CFA8816003D2F13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8CD5B071CFA8816003D2F13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,7 +57,8 @@
 			isa = PBXGroup;
 			children = (
 				F8CD5AFD1CFA8816003D2F13 /* AppDelegate.swift */,
-				F8CD5AFF1CFA8816003D2F13 /* ViewController.swift */,
+				F8CD5AFF1CFA8816003D2F13 /* PlaylistMasterViewController.swift */,
+				F8C4F5011CFB0FE100FEB87D /* PlaylistDetailViewController.swift */,
 				F8CD5B011CFA8816003D2F13 /* Main.storyboard */,
 				F8CD5B041CFA8816003D2F13 /* Assets.xcassets */,
 				F8CD5B061CFA8816003D2F13 /* LaunchScreen.storyboard */,
@@ -135,7 +138,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8CD5B001CFA8816003D2F13 /* ViewController.swift in Sources */,
+				F8C4F5021CFB0FE100FEB87D /* PlaylistDetailViewController.swift in Sources */,
+				F8CD5B001CFA8816003D2F13 /* PlaylistMasterViewController.swift in Sources */,
 				F8CD5AFE1CFA8816003D2F13 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

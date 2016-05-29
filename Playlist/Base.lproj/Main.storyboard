@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Playlist Master View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Playlist" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="PlaylistMasterViewController" customModule="Playlist" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -19,13 +19,15 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4JS-lP-whx">
                                 <rect key="frame" x="137" y="269" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
-                                    <action selector="buttonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="4pk-BK-RJe"/>
+                                    <segue destination="OT5-An-Gfd" kind="modal" id="nNY-3g-c5b"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="4JS-lP-whx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YmR-Yf-9yb"/>
                             <constraint firstItem="4JS-lP-whx" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fLr-gn-p5h"/>
@@ -38,6 +40,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="257.06666666666666" y="301.51333333333332"/>
+        </scene>
+        <!--Playlist Detail View Controller-->
+        <scene sceneID="lid-ZE-oBz">
+            <objects>
+                <viewController id="OT5-An-Gfd" customClass="PlaylistDetailViewController" customModule="Playlist" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cUx-yV-QJf"/>
+                        <viewControllerLayoutGuide type="bottom" id="mAb-HL-6Vx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dXC-Jk-pic">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hTo-VA-wDO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="675" y="301"/>
         </scene>
     </scenes>
 </document>
