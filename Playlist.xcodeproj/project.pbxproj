@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		F8C4F5021CFB0FE100FEB87D /* PlaylistDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C4F5011CFB0FE100FEB87D /* PlaylistDetailViewController.swift */; };
+		F8C4F5041CFBCE4D00FEB87D /* MusicLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C4F5031CFBCE4D00FEB87D /* MusicLibrary.swift */; };
+		F8C4F5071CFBD42900FEB87D /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C4F5061CFBD42900FEB87D /* Playlist.swift */; };
 		F8CD5AFE1CFA8816003D2F13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CD5AFD1CFA8816003D2F13 /* AppDelegate.swift */; };
 		F8CD5B001CFA8816003D2F13 /* PlaylistMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CD5AFF1CFA8816003D2F13 /* PlaylistMasterViewController.swift */; };
 		F8CD5B031CFA8816003D2F13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8CD5B011CFA8816003D2F13 /* Main.storyboard */; };
@@ -17,6 +19,8 @@
 
 /* Begin PBXFileReference section */
 		F8C4F5011CFB0FE100FEB87D /* PlaylistDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistDetailViewController.swift; sourceTree = "<group>"; };
+		F8C4F5031CFBCE4D00FEB87D /* MusicLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicLibrary.swift; sourceTree = "<group>"; };
+		F8C4F5061CFBD42900FEB87D /* Playlist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
 		F8CD5AFA1CFA8816003D2F13 /* Playlist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Playlist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8CD5AFD1CFA8816003D2F13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8CD5AFF1CFA8816003D2F13 /* PlaylistMasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistMasterViewController.swift; sourceTree = "<group>"; };
@@ -37,6 +41,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F8C4F5051CFBCE5600FEB87D /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				F8C4F5031CFBCE4D00FEB87D /* MusicLibrary.swift */,
+				F8C4F5061CFBD42900FEB87D /* Playlist.swift */,
+			);
+			name = DataModel;
+			sourceTree = "<group>";
+		};
 		F8CD5AF11CFA8816003D2F13 = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +73,7 @@
 				F8CD5AFF1CFA8816003D2F13 /* PlaylistMasterViewController.swift */,
 				F8C4F5011CFB0FE100FEB87D /* PlaylistDetailViewController.swift */,
 				F8CD5B011CFA8816003D2F13 /* Main.storyboard */,
+				F8C4F5051CFBCE5600FEB87D /* DataModel */,
 				F8CD5B041CFA8816003D2F13 /* Assets.xcassets */,
 				F8CD5B061CFA8816003D2F13 /* LaunchScreen.storyboard */,
 				F8CD5B091CFA8816003D2F13 /* Info.plist */,
@@ -141,6 +155,8 @@
 				F8C4F5021CFB0FE100FEB87D /* PlaylistDetailViewController.swift in Sources */,
 				F8CD5B001CFA8816003D2F13 /* PlaylistMasterViewController.swift in Sources */,
 				F8CD5AFE1CFA8816003D2F13 /* AppDelegate.swift in Sources */,
+				F8C4F5041CFBCE4D00FEB87D /* MusicLibrary.swift in Sources */,
+				F8C4F5071CFBD42900FEB87D /* Playlist.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
