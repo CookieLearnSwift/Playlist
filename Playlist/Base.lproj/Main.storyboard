@@ -23,7 +23,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="OT5-An-Gfd" kind="push" id="nNY-3g-c5b"/>
+                                    <segue destination="OT5-An-Gfd" kind="push" identifier="showPlaylistDetail" id="nNY-3g-c5b"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -53,9 +53,24 @@
                     <view key="view" contentMode="scaleToFill" id="dXC-Jk-pic">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You haven't pressed the button" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aza-2C-NWH">
+                                <rect key="frame" x="41" y="273" width="238" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="aza-2C-NWH" firstAttribute="centerX" secondItem="dXC-Jk-pic" secondAttribute="centerX" id="Ift-ay-pCG"/>
+                            <constraint firstItem="aza-2C-NWH" firstAttribute="centerY" secondItem="dXC-Jk-pic" secondAttribute="centerY" id="bQj-ey-SQX"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Artists" id="fuB-Eb-GnP"/>
+                    <connections>
+                        <outlet property="buttonPressLabel" destination="aza-2C-NWH" id="zOV-3f-qgo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hTo-VA-wDO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
