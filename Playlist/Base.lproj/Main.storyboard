@@ -28,14 +28,14 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4JS-lP-whx">
                                 <rect key="frame" x="137" y="392" width="46" height="30"/>
                                 <state key="normal" title="Button">
-                                    <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="OT5-An-Gfd" kind="push" identifier="showPlaylistDetail" id="nNY-3g-c5b"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.1764705882352941" green="0.18431372549019609" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="MuT-qz-KaL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7q6-qd-x8J"/>
                             <constraint firstItem="4JS-lP-whx" firstAttribute="top" secondItem="MuT-qz-KaL" secondAttribute="bottom" constant="8" id="Fnl-RQ-0b1"/>
@@ -72,7 +72,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.1764705882352941" green="0.18431372549019609" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="aza-2C-NWH" firstAttribute="centerX" secondItem="dXC-Jk-pic" secondAttribute="centerX" id="Ift-ay-pCG"/>
                             <constraint firstItem="aza-2C-NWH" firstAttribute="centerY" secondItem="dXC-Jk-pic" secondAttribute="centerY" id="bQj-ey-SQX"/>
@@ -92,9 +92,11 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Vl2-9U-VzC" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="IwJ-i9-cbQ">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="IwJ-i9-cbQ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.1764705882" green="0.1843137255" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
