@@ -11,13 +11,15 @@ import UIKit
 class PlaylistDetailViewController: UIViewController {
 
     @IBOutlet weak var buttonPressLabel: UILabel!
-    var segueLabelText : String = ""
+    var playlist : Playlist?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        buttonPressLabel.text = segueLabelText
+        if playlist != nil {
+            buttonPressLabel.text = playlist!.title
+        }
     }
 
     override func didReceiveMemoryWarning() {
