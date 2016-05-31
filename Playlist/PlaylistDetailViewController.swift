@@ -18,7 +18,7 @@ class PlaylistDetailViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         if playlist != nil {
-            buttonPressLabel.text = playlist!.title
+//            buttonPressLabel.text = playlist!.title
         }
     }
 
