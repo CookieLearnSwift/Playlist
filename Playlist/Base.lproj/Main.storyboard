@@ -82,7 +82,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ny4-79-V9B">
-                                        <rect key="frame" x="20" y="39" width="280" height="43"/>
+                                        <rect key="frame" x="20" y="39" width="280" height="42.5"/>
                                         <string key="text">This is a collection of my favorite songs to listen to when working out. It's got everything from fast cardio to power workout tunes. All the right fuel to get your engine going.</string>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
@@ -99,11 +99,27 @@
                                     <constraint firstAttribute="trailing" secondItem="ny4-79-V9B" secondAttribute="trailing" constant="20" id="gqR-2T-eew"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artists" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Otg-tP-9Tx">
+                                <rect key="frame" x="20" y="374" width="46" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist Number 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gdW-yE-DlU">
+                                <rect key="frame" x="20" y="403" width="99" height="16.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.1764705882352941" green="0.18431372549019609" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="KdZ-yp-9oV" secondAttribute="trailing" id="8mf-um-Eho"/>
+                            <constraint firstItem="gdW-yE-DlU" firstAttribute="top" secondItem="Otg-tP-9Tx" secondAttribute="bottom" constant="8" id="B5L-gc-O5f"/>
+                            <constraint firstItem="Otg-tP-9Tx" firstAttribute="leading" secondItem="dXC-Jk-pic" secondAttribute="leading" constant="20" id="Ehn-Vl-LMX"/>
+                            <constraint firstItem="gdW-yE-DlU" firstAttribute="leading" secondItem="dXC-Jk-pic" secondAttribute="leading" constant="20" id="WSd-Nh-VNA"/>
                             <constraint firstItem="THb-Zv-BeR" firstAttribute="bottom" secondItem="KdZ-yp-9oV" secondAttribute="bottom" id="Yd1-dX-QgH"/>
+                            <constraint firstItem="Otg-tP-9Tx" firstAttribute="top" secondItem="THb-Zv-BeR" secondAttribute="bottom" constant="20" id="fYH-Ek-Tp2"/>
                             <constraint firstAttribute="trailing" secondItem="THb-Zv-BeR" secondAttribute="trailing" id="kAQ-SS-tPY"/>
                             <constraint firstItem="THb-Zv-BeR" firstAttribute="leading" secondItem="dXC-Jk-pic" secondAttribute="leading" id="rDt-Mz-JJ1"/>
                             <constraint firstItem="KdZ-yp-9oV" firstAttribute="leading" secondItem="dXC-Jk-pic" secondAttribute="leading" id="s0b-qb-fRS"/>
@@ -111,6 +127,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Artists" id="fuB-Eb-GnP"/>
+                    <connections>
+                        <outlet property="playlistArtist0" destination="gdW-yE-DlU" id="BjI-xR-J4Z"/>
+                        <outlet property="playlistCoverImage" destination="KdZ-yp-9oV" id="6xP-sL-SdI"/>
+                        <outlet property="playlistDescription" destination="ny4-79-V9B" id="ZWs-mK-DGa"/>
+                        <outlet property="playlistTitle" destination="34q-XM-jFE" id="hGd-e0-VUR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hTo-VA-wDO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

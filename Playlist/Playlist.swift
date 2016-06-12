@@ -29,7 +29,7 @@ struct Playlist {
         icon = UIImage.init(named: iconName!)
 
         let largeIconName = playlistDictionary["largeIcon"] as! String?
-        icon = UIImage.init(named: largeIconName!)
+        largeIcon = UIImage.init(named: largeIconName!)
 
         artists += playlistDictionary["artists"] as! [String]
 
