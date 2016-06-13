@@ -14,6 +14,8 @@ class PlaylistDetailViewController: UIViewController {
     @IBOutlet weak var playlistTitle: UILabel!
     @IBOutlet weak var playlistDescription: UILabel!
     @IBOutlet weak var playlistArtist0: UILabel!
+    @IBOutlet weak var playlistArtist1: UILabel!
+    @IBOutlet weak var playlistArtist2: UILabel!
 
     var playlist : Playlist?
 
@@ -27,6 +29,8 @@ class PlaylistDetailViewController: UIViewController {
             playlistCoverImage.image = playlist!.largeIcon
             playlistCoverImage.backgroundColor = playlist!.backgroundColor
             playlistArtist0.text = playlist!.artists[0]
+            playlistArtist1.text = playlist!.artists[1]
+            playlistArtist2.text = playlist!.artists[2]
         }
     }
 

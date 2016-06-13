@@ -32,13 +32,6 @@
                                     <outletCollection property="gestureRecognizers" destination="t62-md-3ee" appends="YES" id="7ah-bw-Sgu"/>
                                 </connections>
                             </imageView>
-                            <imageView contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="cQM-Sy-AOH">
-                                <rect key="frame" x="2" y="233" width="157" height="165"/>
-                                <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="IcG-RE-rcj" appends="YES" id="ucf-XD-fy4"/>
-                                </connections>
-                            </imageView>
                             <imageView contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="VZo-m3-giy">
                                 <rect key="frame" x="161" y="233" width="157" height="165"/>
                                 <gestureRecognizers/>
@@ -58,6 +51,13 @@
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="PJf-9v-3sF" appends="YES" id="cy4-2Z-KHs"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="cQM-Sy-AOH">
+                                <rect key="frame" x="2" y="233" width="157" height="165"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="IcG-RE-rcj" appends="YES" id="ucf-XD-fy4"/>
                                 </connections>
                             </imageView>
                         </subviews>
@@ -193,12 +193,28 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist Number 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="prx-Q8-6zw">
+                                <rect key="frame" x="20" y="430" width="99" height="16.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist Number 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1A0-Dc-8ZK">
+                                <rect key="frame" x="20" y="457" width="99" height="16.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.1764705882352941" green="0.18431372549019609" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="KdZ-yp-9oV" secondAttribute="trailing" id="8mf-um-Eho"/>
+                            <constraint firstItem="1A0-Dc-8ZK" firstAttribute="top" secondItem="prx-Q8-6zw" secondAttribute="bottom" constant="10.5" id="9Qa-OG-sLP"/>
                             <constraint firstItem="gdW-yE-DlU" firstAttribute="top" secondItem="Otg-tP-9Tx" secondAttribute="bottom" constant="8" id="B5L-gc-O5f"/>
                             <constraint firstItem="Otg-tP-9Tx" firstAttribute="leading" secondItem="dXC-Jk-pic" secondAttribute="leading" constant="20" id="Ehn-Vl-LMX"/>
+                            <constraint firstItem="1A0-Dc-8ZK" firstAttribute="leading" secondItem="dXC-Jk-pic" secondAttribute="leading" constant="20" id="GAX-Sr-1FQ"/>
+                            <constraint firstItem="prx-Q8-6zw" firstAttribute="leading" secondItem="dXC-Jk-pic" secondAttribute="leading" constant="20" id="POk-Oy-uxi"/>
+                            <constraint firstItem="prx-Q8-6zw" firstAttribute="top" secondItem="gdW-yE-DlU" secondAttribute="bottom" constant="10.5" id="RuT-DC-ppB"/>
                             <constraint firstItem="gdW-yE-DlU" firstAttribute="leading" secondItem="dXC-Jk-pic" secondAttribute="leading" constant="20" id="WSd-Nh-VNA"/>
                             <constraint firstItem="THb-Zv-BeR" firstAttribute="bottom" secondItem="KdZ-yp-9oV" secondAttribute="bottom" id="Yd1-dX-QgH"/>
                             <constraint firstItem="Otg-tP-9Tx" firstAttribute="top" secondItem="THb-Zv-BeR" secondAttribute="bottom" constant="20" id="fYH-Ek-Tp2"/>
@@ -211,6 +227,8 @@
                     <navigationItem key="navigationItem" title="Artists" id="fuB-Eb-GnP"/>
                     <connections>
                         <outlet property="playlistArtist0" destination="gdW-yE-DlU" id="BjI-xR-J4Z"/>
+                        <outlet property="playlistArtist1" destination="prx-Q8-6zw" id="m3j-gn-aQo"/>
+                        <outlet property="playlistArtist2" destination="1A0-Dc-8ZK" id="JX9-3g-IDm"/>
                         <outlet property="playlistCoverImage" destination="KdZ-yp-9oV" id="6xP-sL-SdI"/>
                         <outlet property="playlistDescription" destination="ny4-79-V9B" id="ZWs-mK-DGa"/>
                         <outlet property="playlistTitle" destination="34q-XM-jFE" id="hGd-e0-VUR"/>
