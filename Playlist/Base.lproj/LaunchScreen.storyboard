@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" initialViewController="01J-lp-oVM">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -10,18 +10,50 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
-                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                        <viewControllerLayoutGuide type="top" id="Y4W-Se-7zQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="J0C-mc-WDb"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XVY-S7-RMv">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="284"/>
+                                <color key="backgroundColor" red="0.2196078431372549" green="0.20392156862745098" blue="0.22352941176470587" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CV9-4M-mkb">
+                                <rect key="frame" x="0.0" y="284" width="320" height="284"/>
+                                <color key="backgroundColor" red="0.12549019607843137" green="0.14117647058823529" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Launch Icon" translatesAutoresizingMaskIntoConstraints="NO" id="PQE-6L-qR3">
+                                <rect key="frame" x="100" y="224" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="8ZT-as-VFg"/>
+                                    <constraint firstAttribute="height" constant="120" id="Xqq-Rv-0Qh"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XVY-S7-RMv" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="1gO-Jm-zY1"/>
+                            <constraint firstAttribute="trailing" secondItem="CV9-4M-mkb" secondAttribute="trailing" id="2iT-6O-Dl2"/>
+                            <constraint firstItem="XVY-S7-RMv" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="4YF-a6-BCy"/>
+                            <constraint firstItem="J0C-mc-WDb" firstAttribute="top" secondItem="CV9-4M-mkb" secondAttribute="bottom" id="7Tx-ps-aJj"/>
+                            <constraint firstItem="CV9-4M-mkb" firstAttribute="top" secondItem="XVY-S7-RMv" secondAttribute="bottom" id="Obr-wb-Va6"/>
+                            <constraint firstItem="PQE-6L-qR3" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="dRd-4C-qxg"/>
+                            <constraint firstAttribute="trailing" secondItem="XVY-S7-RMv" secondAttribute="trailing" id="hee-nh-cIQ"/>
+                            <constraint firstItem="PQE-6L-qR3" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="hqS-5F-3Dn"/>
+                            <constraint firstItem="CV9-4M-mkb" firstAttribute="height" secondItem="XVY-S7-RMv" secondAttribute="height" id="hwj-Vo-XZp"/>
+                            <constraint firstItem="CV9-4M-mkb" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="xfs-Tw-MBz"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="28" y="355"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Launch Icon" width="120" height="120"/>
+    </resources>
 </document>
